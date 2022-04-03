@@ -1,0 +1,62 @@
+@import theme
+
+nav
+    // background-image: url(/images/map-col.png)
+    border: 1px solid var(--c-bgx)
+    background-repeat: round
+    background-color: var(--c-bg)
+    height: 110px
+    display: flex
+    justify-content: space-between
+    // width: max-content
+    width: -webkit-fill-available
+    position: fixed
+    user-select: none
+
+    #logo
+        height: 5rem
+    #menu
+        background-color: var(--c-bg)
+        color: var(--c-dark)
+
+        .active
+            background-color: var(--c-bgx)
+            // box-shadow: 5px 5px 10px var(--c-darkX)
+            border: 1px solid var(--c-bgx)
+            border-right: 10px solid var(--c-ui)
+            color: var(--c-ui)
+.ui
+    // box-shadow: 5px 5px 10px var(--c-bgx)
+    border: 1px solid var(--c-bgx)
+    background-color: var(--c-bg)
+    border-radius: 10px
+    color: var(--c-dark)
+.sh
+    box-shadow: 5px 5px 10px #00000000
+input , .btn
+    background-color: var(--c-bg) !important
+    padding: 5px
+    margin: 5px 0
+    border: 1px solid var(--c-ui)
+    border-radius: 10px
+    // width: -webkit-fill-available
+    &:focus,&:active
+
+        outline: none
+        border: 1px solid var(--c-uiX)
+section
+    button ,.btn
+        background-color: var(--c-bg) !important
+        border: 3px solid var(--c-ui) !important
+        padding: 5px
+        margin: 5px 0
+        border: 3px solid var(--c-ui)
+        border-radius: 10px
+        width: -webkit-fill-available
+.alert
+    border: 3px solid #4dff38
+    border-radius: 10px
+    padding: 5px
+    margin: 5px 0
+    &.err
+        border: 3px solid #ff3838
