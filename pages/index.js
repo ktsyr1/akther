@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Nav from "components/theme/nav";
 
 export default function Home() {
     return (
@@ -12,7 +11,7 @@ export default function Home() {
                 <br /><br /><br /><br /><br /><br /><br />
                 <br /><br /><br /><br /><br /><b>asd</b> 
             </div> */}
-            <img  src="images/menu@2x.png" style={{ width: 300 ,marginTop:230}} />
+            {/* <img  src="images/menu@2x.png" style={{ width: 300 ,marginTop:230}} /> */}
         </>
     )
 }

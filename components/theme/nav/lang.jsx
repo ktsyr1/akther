@@ -1,11 +1,12 @@
 import Link from "next/link";
- 
+import Image from 'next/image'
+
 
 const Lang = () => {
   return (
     <div className="box">
       <button className="box p-2" onClick={change}>
-        <img
+        <Image
           src="/images/lang-ar.png"
           alt="arabic lang"
           id="imageLang"

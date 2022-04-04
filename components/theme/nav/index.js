@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { IconCall, IconItem, IconLive, IconNotification, IconRadio, IconSearch, IconTqs } from "components/icons";
+import Image from 'next/image'
 
 import Menu from "./menu";
 import Lang from "./lang";
@@ -23,7 +24,7 @@ const Nav = () => {
             {/* logo */}
             <Link href='/' >
                 <a>
-                    <img src="/images/logo.png" id="logo" alt="logo akther" />
+                    <Image src="/images/logo.png" width={40} height={80} id="logo" alt="logo akther" />
                 </a>
             </Link>
             {/* end */}
