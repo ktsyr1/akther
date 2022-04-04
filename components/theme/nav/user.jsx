@@ -4,7 +4,7 @@ import { IconDark, IconLight } from "../../icons";
 import { useState } from "react";
 
 const UserBoxNav = () => {
-    let [icon, setIcon] = useState(<IconUser />);
+    let [icon, setIcon] = useState(<IconDark/>);
 
     const dark = () => {
         document.body.classList.toggle("dark");
