@@ -1,4 +1,5 @@
-import TitleForm from "components/theme/form";
+import TitleForm from "components/theme/TitleForm";
+import Input from "../../components/theme/input";
 
 const Repassword = () => {
     return (
@@ -6,6 +7,10 @@ const Repassword = () => {
             <form className="ui w-[300px] p-4 m-auto">
                 <TitleForm data={'استعادة كلمة المرور'} />
                 {/* email */}
+                <Input
+                    title={'الايميل'} alert={'الايميل'} box='py-2'
+                    type="email" name="email" placeholder="الايميل" style='w-full'
+                />
                 <div className="py-2">
                     <p className="text-xs px-2 ">الايميل</p>
                     <input type="email" name="email" className="w-full " />

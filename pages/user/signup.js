@@ -1,4 +1,4 @@
-import TitleForm from "components/theme/form";
+import TitleForm from "components/theme/TitleForm";
 import Link from "next/link";
 
 const Signup = () => {

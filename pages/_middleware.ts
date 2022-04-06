@@ -1,9 +1,9 @@
 
 import { NextRequest, NextResponse } from 'next/server'
 
-const PUBLIC_FILE = /\.(.*)$/
- 
-export function middleware(req: NextRequest) { 
-    console.log(req.cookies); 
-    return
+
+export function middleware(req: NextRequest, res: NextResponse, next: () => void) {
+    // console.log(req.cookies);
+    let geo = req.nextUrl
+    NextResponse.json(geo)
 }

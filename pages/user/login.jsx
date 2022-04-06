@@ -1,6 +1,6 @@
 import Link from "next/link";
 import axios from 'axios';
-import TitleForm from "components/theme/form";
+import TitleForm from "components/theme/TitleForm";
 const login = () => {
     return (
         <>
