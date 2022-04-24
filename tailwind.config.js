@@ -8,8 +8,8 @@ module.exports = {
         
         colors: {
             ui: {
-                1: '#E8C174',
-                2: '#AA894E'
+                1: 'var(--c-ui)',
+                2: 'var(--c-uiX)'
             },
             dark: {
                 1: 'var(--c-dark)',

@@ -3,7 +3,7 @@ function TitleForm(props) {
         <>
             <h1 className="text-center text-xl">{props.data}</h1>
             <div className="center box">
-                <hr className="text-ui-1 m-2 center w-[150px] " />
+                <br className="text-ui-1 m-2 center w-[150px] " />
             </div>
         </>
     );

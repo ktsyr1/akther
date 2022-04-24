@@ -18,12 +18,12 @@ const login = () => {
                     <a className="text-xs py-2 w-[-webkit-fill-available] box justify-end">نسيت كلمة السر ؟</a>
                 </Link>
                 <button onClick={send} className='ui' type='button'>تسجيل الدخول</button>
-                <div className="box row">
+                {/* <div className="box row">
                     <p className="text-xs	px-1"> اذ لم يكن لديك حساب بامكانك </p>
                     <Link href="/user/signup">
                         <a className="text-xs text-ui-1	"> تسجيل حساب جديد </a>
                     </Link>
-                </div>
+                </div> */}
             </form>
         </>
     );

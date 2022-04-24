@@ -4,27 +4,18 @@ import { IconDark, IconLight } from "../../icons";
 import { useState } from "react";
 
 const UserBoxNav = () => {
-    let [icon, setIcon] = useState(<IconDark/>);
-
-    const dark = () => {
-        document.body.classList.toggle("dark");
-        if (document.querySelector('body.dark')) setIcon(<IconLight />);
-        else setIcon(<IconDark />);
-
-    };
+   
 
     return (
         <div>
             <div className="box p-4" onClick={openCard}>
                 <IconUser />
             </div>
-            <div id="user" className="box col center pup z-10 none inset-x-0 w-[300px] ui min-h-[-webkit-fill-available] " >
+            <div id="user" className="box col center pup z-10 m4 none left-0 w-[300px] ui min-h-[-webkit-fill-available] " >
 
                 <div className="p-4 box row">
                     <b className="w-full">المستخدم</b>
-                    <div id="darkBtn" onClick={dark} >
-                        {icon}
-                    </div>
+                  
                 </div>
                 <Link href={"/user/signup"} >
                     <a className="border-ui-1 border-2 p-2 rounded-xl mt-4 m-4" onClick={openCard} > تسجيل </a>
@@ -32,9 +23,7 @@ const UserBoxNav = () => {
                 <Link href={"/user/login"} >
                     <a className="border-ui-1 border-2 p-2 rounded-xl mt-4 m-4 " onClick={openCard}>تسجيل الدخول</a>
                 </Link>
-                <Link href='/user/join' >
-                    <a className="border-ui-1 border-2 p-2 rounded-xl mt-4 m-4 	" onClick={openCard}>الانضمام كمصدر</a>
-                </Link>
+                
             </div>
         </div >
     );

@@ -22,15 +22,7 @@ const Signup = () => {
                     <p className="text-xs px-2 ">اسم المستخدم</p>
                     <input type="text" name="username" className="w-full " />
                 </div>
-                {/* country */}
-                <div className="py-2">
-                    <p className="text-xs px-2 ">البلد</p>
-                    <select className="w-full  btn " id="country">
-                        {country.map(a => {
-                            return <option value={a.value} key={a.value}>{a.ar}</option>
-                        })}
-                    </select>
-                </div>
+
 
                 {/* email */}
                 <div className="py-2">
@@ -45,22 +37,11 @@ const Signup = () => {
                     <p className="text-xs px-2	"> اعادة كلمة السر</p>
                     <input type="password" name="repassword" className="w-full " />
                 </div>
-                <div className="box">
-                    <input type={'checkbox'} />
-                    <p className="text-xs px-2	">الموافقة على </p>
-                    <Link href={'/شروط-الاستخدام'}>
-                        <a className="text-xs text-ui-1	">شروط الاستخدام</a>
-                    </Link>
-                </div>
                 <button onClick={send} className='ui' type='button'>تسجيل  </button>
-                <div className="box row">
-                    <p className="text-xs	px-1"> اذ كان لديك حساب بامكانك </p>
-                    <Link href="/user/login">
-                        <a className="text-xs text-ui-1	"> تسجيل دخول</a>
-                    </Link>
-                </div>
-                <div className="alert none text-red text-xs"> مشكلة </div>
-            </form> 
+                {/* <Link href="/user/login">
+                    <a className="text-xs text-ui-1 w-full	"> تسجيل دخول</a>
+                </Link>  */}
+            </form>
 
         </>
     );

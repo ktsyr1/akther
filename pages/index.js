@@ -5,7 +5,7 @@ export default function Home(props) {
     return (
         <>
             <Head >
-                <title>أكثر</title>
+                <title> Q2 plus</title>
             </Head> 
             {/* <div className="box col">
                 <br /><br /><br /><br /><br /><br /><br />
